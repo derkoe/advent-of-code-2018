@@ -1,8 +1,9 @@
 package main
 
 import (
-	"aoc2018/day-2"
 	"fmt"
+
+	"github.com/derkoe/advent-of-code-2018/day-2"
 )
 
 func main() {

@@ -7,6 +7,7 @@ import (
 	"strconv"
 )
 
+// Read reads the input file for day 1
 func Read() []int {
 	file, _ := os.Open("input")
 	scanner := bufio.NewScanner(file)
