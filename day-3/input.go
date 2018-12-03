@@ -9,11 +9,11 @@ import (
 
 // Patch is the elves' patch
 type Patch struct {
-	id    int
-	posX  int
-	posY  int
-	sizeX int
-	sizeY int
+	Id    int
+	PosX  int
+	PosY  int
+	SizeX int
+	SizeY int
 }
 
 // Read reads input for day 3
@@ -25,11 +25,11 @@ func Read() []Patch {
 	for scanner.Scan() {
 		parsedLine := lineRegexp.FindStringSubmatch(scanner.Text())
 		patch := Patch{
-			id:    atoi(parsedLine[1]),
-			posX:  atoi(parsedLine[2]),
-			posY:  atoi(parsedLine[3]),
-			sizeX: atoi(parsedLine[4]),
-			sizeY: atoi(parsedLine[5]),
+			Id:    atoi(parsedLine[1]),
+			PosX:  atoi(parsedLine[2]),
+			PosY:  atoi(parsedLine[3]),
+			SizeX: atoi(parsedLine[4]),
+			SizeY: atoi(parsedLine[5]),
 		}
 		res = append(res, patch)
 	}
